@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
-
 import '../../core/constants/strings.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({Key? key}) : super(key: key);
+class ChartsView extends StatelessWidget {
+  const ChartsView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          time,
+          charts,
           style: context.textTheme.headline6,
         ),
       ),

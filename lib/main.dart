@@ -1,4 +1,5 @@
-import 'package:cheers_app/views/home/home_view.dart';
+import 'package:cheers_app/core/theme/light_theme.dart';
+import 'package:cheers_app/views/nav/nav_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -8,7 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: HomeView(),
-    );
+        debugShowCheckedModeBanner: false,
+        theme: lightTheme,
+        home: NavView(),
+        getPages: [
+          GetPage(name: '/', page: () => NavView()),
+        ]);
   }
 }
