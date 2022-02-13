@@ -1,6 +1,6 @@
-import 'package:cheers_app/views/login/login_view.dart';
-import 'package:cheers_app/views/onboarding/onboarding_view.dart';
-import 'package:cheers_app/views/register/register_view.dart';
+import 'views/login/login_view.dart';
+import 'views/onboarding/onboarding_view.dart';
+import 'views/register/register_view.dart';
 
 import 'core/theme/light_theme.dart';
 import 'views/nav/nav_view.dart';
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         theme: lightTheme,
-        home: SafeArea(child: RegisterView()),
+        home: SafeArea(child: OnboardingView()),
         getPages: [
           GetPage(name: '/', page: () => NavView()),
           GetPage(name: '/login', page: () => LoginView()),

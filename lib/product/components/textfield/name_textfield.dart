@@ -1,4 +1,4 @@
-import 'package:cheers_app/core/components/textfield/custom_textfield.dart';
+import '../../../core/components/textfield/custom_textfield.dart';
 import 'package:flutter/material.dart';
 
 class NameTextFieldSection extends StatelessWidget {

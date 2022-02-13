@@ -1,9 +1,8 @@
-import 'package:cheers_app/views/nav/nav_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kartal/kartal.dart';
 
-import '../../../views/login/login_view.dart';
+import '../../../views/nav/nav_view.dart';
 
 class CustomOutlineBorder extends StatelessWidget {
   final String buttonText;

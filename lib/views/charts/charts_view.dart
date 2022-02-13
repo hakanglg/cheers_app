@@ -1,6 +1,6 @@
-import 'package:cheers_app/core/components/column/column.dart';
-import 'package:cheers_app/core/components/row/row.dart';
-import 'package:cheers_app/core/constants/colors.dart';
+import '../../core/components/column/column.dart';
+import '../../core/components/row/row.dart';
+import '../../core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 

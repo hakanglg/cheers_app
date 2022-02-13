@@ -1,5 +1,5 @@
-import 'package:cheers_app/core/constants/colors.dart';
-import 'package:cheers_app/views/login/login_view.dart';
+import '../../core/constants/colors.dart';
+import '../login/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kartal/kartal.dart';

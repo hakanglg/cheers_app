@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
+import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+
+import '../../core/constants/colors.dart';
+import '../../core/constants/strings.dart';
 import '../charts/charts_view.dart';
 import '../health/healt_view.dart';
 import '../home/home_view.dart';
 import '../profile/profile_view.dart';
-import 'package:flutter/material.dart';
-import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
-import '../../core/constants/colors.dart';
-import '../../core/constants/strings.dart';
 
 class NavView extends StatefulWidget {
   const NavView({Key? key}) : super(key: key);

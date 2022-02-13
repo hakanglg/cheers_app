@@ -1,4 +1,4 @@
-import 'package:cheers_app/views/login/login_view.dart';
+import '../../../views/login/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
