@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../core/components/textfield/custom_textfield.dart';
 
-class PasswordTextFieldSection extends StatelessWidget {
-  const PasswordTextFieldSection({
+class CostTextFieldSection extends StatelessWidget {
+  const CostTextFieldSection({
     Key? key,
     required this.mailController,
   }) : super(key: key);
@@ -17,6 +17,6 @@ class PasswordTextFieldSection extends StatelessWidget {
         hide: true,
         controller: mailController,
         icon: FontAwesomeIcons.key,
-        hintText: "Parola");
+        hintText: "Alkole Günlük Harcadığınız Miktar");
   }
 }

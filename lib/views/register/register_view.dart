@@ -1,4 +1,5 @@
 import '../../core/constants/colors.dart';
+import '../../product/components/textfield/cost_textfield.dart';
 import '../login/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -39,6 +40,10 @@ class RegisterView extends StatelessWidget {
                     Expanded(
                         flex: 1,
                         child: PasswordTextFieldSection(
+                            mailController: mailController)),
+                    Expanded(
+                        flex: 1,
+                        child: CostTextFieldSection(
                             mailController: mailController)),
                     Spacer(
                       flex: 1,
