@@ -1,3 +1,5 @@
+import 'package:cheers_app/core/components/column/column.dart';
+import 'package:cheers_app/core/components/row/row.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
@@ -15,6 +17,11 @@ class ProfileView extends StatelessWidget {
           style: context.textTheme.headline6,
         ),
       ),
+      body: MyColumn(
+          child: MyRow(
+              child: Column(
+        children: [],
+      ))),
     );
   }
 }

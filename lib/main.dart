@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         theme: lightTheme,
-        home: NavView(),
+        home: SafeArea(child: NavView()),
         getPages: [
           GetPage(name: '/', page: () => NavView()),
         ]);

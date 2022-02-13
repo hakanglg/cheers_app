@@ -13,6 +13,4 @@ const Color forgattonPurple = Color(0xff9980FA);
 const Color hollyHock = Color(0xff833471);
 
 
-
-
-
+// Color.fromARGB(255, 36, 36, 49)
