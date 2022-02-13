@@ -10,7 +10,7 @@ class MyColumn extends StatelessWidget {
     return Column(
       children: [
         Spacer(flex: 1),
-        Expanded(flex: 18, child: child),
+        Expanded(flex: 19, child: child),
         Spacer(flex: 1)
       ],
     );
