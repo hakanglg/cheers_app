@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:cheers_app/core/components/column/column.dart';
+import 'package:cheers_app/core/components/row/row.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
@@ -54,7 +56,15 @@ class _HomeViewState extends State<HomeView> {
             style: context.textTheme.headline6,
           ),
         ),
-        body: buildTime());
+        body: Center(
+          child: MyColumn(
+            child: MyRow(
+              child: Container(
+                color: Colors.blue,
+              ),
+            ),
+          ),
+        ));
   }
 
   Widget buildTime() {
@@ -70,27 +80,29 @@ class _HomeViewState extends State<HomeView> {
         // crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
-          buildTimeCard(time: days, header: "GÜN"),
-          buildTimeCard(time: hours, header: "SAAT"),
-          buildTimeCard(time: minutes, header: "DAKİKA"),
-          buildTimeCard(time: seconds, header: "SANİYE"),
+          buildTimeCard(time: days, header: "Gün", color: Colors.red),
+          buildTimeCard(time: hours, header: "S"),
+          buildTimeCard(time: minutes, header: "DK"),
+          buildTimeCard(time: seconds, header: "SN"),
         ],
       ),
     );
   }
 
-  Widget buildTimeCard({required String time, required String header}) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+  Widget buildTimeCard({required String time, String? header, Color? color}) {
+    return Wrap(
+      // crossAxisAlignment: WrapCrossAlignment.center,
       // crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
           time,
-          style: context.textTheme.headline1!.copyWith(),
+          style: context.textTheme.headline1!
+              .copyWith(fontWeight: FontWeight.w800, color: color),
         ),
+        context.emptySizedWidthBoxLow,
         Padding(
           padding: EdgeInsets.only(top: context.dynamicHeight(.08)),
-          child: Text(header),
+          child: Text(header!),
         )
       ],
     );
