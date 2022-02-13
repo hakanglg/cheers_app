@@ -1,7 +1,7 @@
-import 'package:cheers_app/views/charts/charts_view.dart';
-import 'package:cheers_app/views/health/healt_view.dart';
-import 'package:cheers_app/views/home/home_view.dart';
-import 'package:cheers_app/views/profile/profile_view.dart';
+import '../charts/charts_view.dart';
+import '../health/healt_view.dart';
+import '../home/home_view.dart';
+import '../profile/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import '../../core/constants/colors.dart';
@@ -41,16 +41,16 @@ class _HomeViewState extends State<NavView> {
         onTap: onTap,
         items: [
           /// Home
-          buildNavBarItem(Icon(Icons.home_outlined), home),
+          buildNavBarItem(Icon(Icons.home_outlined), navHome),
 
           /// Likes
-          buildNavBarItem(Icon(Icons.favorite_border), health),
+          buildNavBarItem(Icon(Icons.favorite_border), navHealth),
 
           /// Search
-          buildNavBarItem(Icon(Icons.show_chart), charts),
+          buildNavBarItem(Icon(Icons.show_chart), navCharts),
 
           /// Profile
-          buildNavBarItem(Icon(Icons.person_outline), profile),
+          buildNavBarItem(Icon(Icons.person_outline), navProfile),
         ],
       ),
     );

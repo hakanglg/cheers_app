@@ -1,5 +1,5 @@
-import 'package:cheers_app/core/theme/light_theme.dart';
-import 'package:cheers_app/views/nav/nav_view.dart';
+import 'core/theme/light_theme.dart';
+import 'views/nav/nav_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

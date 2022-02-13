@@ -11,7 +11,7 @@ class ProfileView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          profile,
+          navProfile,
           style: context.textTheme.headline6,
         ),
       ),

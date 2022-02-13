@@ -17,7 +17,7 @@ class _HomeViewModelState extends State<HomeViewModel> {
   @override
   void initState() {
     super.initState();
-    startTimer();
+    // startTimer();
   }
 
   void addTime() {
